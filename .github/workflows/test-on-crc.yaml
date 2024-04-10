@@ -96,6 +96,7 @@ jobs:
             image: 'quay.io/anjoseph/gitops-operator-catalog:v1.12.0'
             publisher: 'Red Hat Developer'
             sourceType: grpc
+          EOF
       - name: Create GitOps Subscription
         run: |
           oc apply -f - <<EOF
