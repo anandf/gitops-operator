@@ -33,14 +33,18 @@ jobs:
           chmod +x /usr/local/bin/operator-sdk
           which operator-sdk
           operator-sdk version
+      - name: install opm 
+        run: |
+          wget https://github.com/operator-framework/operator-registry/releases/download/v1.15.1/linux-amd64-opm -O /usr/local/bin/opm
+          chmod +x /usr/local/bin/opm
+          which opm
+          opm version
       - name: build bundle
         run: |
-           make bundle
-           make bundle-build
+          IMAGE=quay.io/anjoseph/gitops-operator VERSION=1.12.0  make bundle bundle-build
       - name: build catalog
         run: |
-           make opm
-           make catalog-build
+          IMAGE=quay.io/anjoseph/gitops-operator VERSION=1.12.0 make catalog-build
       - name: Download and install CRC
         run: |
           wget "https://developers.redhat.com/content-gateway/file/pub/openshift-v4/clients/crc/2.33.0/crc-linux-amd64.tar.xz"
