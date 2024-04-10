@@ -30,6 +30,7 @@ jobs:
       - name: install operator-sdk
         run : |
           wget https://github.com/operator-framework/operator-sdk/releases/download/v1.34.1/operator-sdk_linux_amd64 -O /usr/local/bin/operator-sdk
+          chmod +x /usr/local/bin/operator-sdk
           which operator-sdk
           operator-sdk version
       - name: build bundle
