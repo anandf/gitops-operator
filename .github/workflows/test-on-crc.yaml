@@ -102,6 +102,13 @@ jobs:
       - name: Create GitOps Subscription
         run: |
           oc apply -f - <<EOF
+          apiVersion: v1
+          kind: Namespace
+          metadata:
+            name: openshift-gitops-operator
+          spec: {}
+          EOF
+          oc apply -f - <<EOF
           apiVersion: operators.coreos.com/v1alpha1
           kind: Subscription
           metadata:
