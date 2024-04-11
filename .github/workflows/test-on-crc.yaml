@@ -98,7 +98,8 @@ jobs:
             sourceType: grpc
           EOF
           oc wait --for jsonpath='{.status.connectionState.lastObservedState}'=READY catalogsource gitops-service-source -n openshift-marketplace --timeout=300s
-          sleep 300
+          sleep 30
+          oc get pods -A | grep gitops
       - name: Create GitOps Subscription
         run: |
           oc apply -f - <<EOF
@@ -126,3 +127,4 @@ jobs:
           EOF
           sleep 300
           oc get pods -A | grep gitops
+          oc get subscription -n openshift-gitops-operator gitops-operator -o yaml
