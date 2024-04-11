@@ -125,7 +125,4 @@ jobs:
             startingCSV: gitops-operator.v1.8.0
           EOF
           sleep 300
-          oc get pods -n openshift-gitops-operator
-          oc rollout status deployment openshift-gitops-operator-controller-manager -n openshift-gitops-operator
-          oc get pods -n openshift-gitops
-          oc rollout status deployment openshift-gitops-server -n openshift-gitops
+          oc get pods -A | grep gitops
