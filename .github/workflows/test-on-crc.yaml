@@ -103,6 +103,8 @@ jobs:
           apiVersion: operators.coreos.com/v1alpha1
           kind: Subscription
           metadata:
+            labels:
+              operators.coreos.com/gitops-operator.openshift-gitops-operator: ""
             name: gitops-operator
             namespace: openshift-gitops-operator
           spec:
@@ -111,6 +113,7 @@ jobs:
             name: gitops-operator
             source: gitops-service-source
             sourceNamespace: openshift-marketplace
+            startingCSV: gitops-operator.v1.8.0
           EOF
           sleep 300
           oc get pods -n openshift-gitops
