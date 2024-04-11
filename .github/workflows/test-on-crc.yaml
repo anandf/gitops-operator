@@ -98,7 +98,6 @@ jobs:
             sourceType: grpc
           EOF
           oc wait --for jsonpath='{.status.connectionState.lastObservedState}'=READY catalogsource gitops-service-source -n openshift-marketplace --timeout=300s
-          sleep 30
           oc get pods -A | grep gitops
       - name: Create GitOps Subscription
         run: |
@@ -122,7 +121,7 @@ jobs:
           kind: Subscription
           metadata:
             name: gitops-operator
-            namespace: openshift-operators
+            namespace: openshift-gitops-operator
           spec:
             channel: latest
             installPlanApproval: Automatic
@@ -132,4 +131,10 @@ jobs:
             startingCSV: gitops-operator.v1.8.0
           EOF
           sleep 300
-          oc get pods -A | grep gitops
+          oc rollout status deployment openshift-gitops-operator-controller-manager -n openshift-gitops-operator
+          oc rollout status deployment openshift-gitops-server -n openshift-gitops
+          oc rollout status deployment openshift-gitops-repo-server -n openshift-gitops
+          oc rollout status deployment openshift-gitops-dex-server -n openshift-gitops
+          oc rollout status deployment openshift-gitops-redis -n openshift-gitops
+          oc rollout status deployment openshift-gitops-applicationset-controller -n openshift-gitops
+          oc get pods -n openshift-gitops
