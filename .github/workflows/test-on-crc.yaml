@@ -74,6 +74,8 @@ jobs:
       - name: Set the crc config
         run: |
           crc config set preset okd
+          crc config set cpus 5
+          crc config set memory 24576
           crc config set network-mode user
       - name: Setup the crc
         run: sudo -su $USER crc setup
@@ -138,3 +140,6 @@ jobs:
           oc rollout status deployment openshift-gitops-redis -n openshift-gitops
           oc rollout status deployment openshift-gitops-applicationset-controller -n openshift-gitops
           oc get pods -n openshift-gitops
+      - name: Run E2E Kuttl tests
+        run: |
+          make e2e-tests-sequential
