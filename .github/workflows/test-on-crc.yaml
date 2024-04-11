@@ -103,12 +103,12 @@ jobs:
           apiVersion: operators.coreos.com/v1alpha1
           kind: Subscription
           metadata:
-            name: openshift-gitops-operator
-            namespace: openshift-operators
+            name: gitops-operator
+            namespace: openshift-gitops-operator
           spec:
             channel: latest
             installPlanApproval: Automatic
-            name: openshift-gitops-operator
+            name: gitops-operator
             source: gitops-service-source
             sourceNamespace: openshift-marketplace
           EOF
