@@ -163,7 +163,7 @@ metadata:
       ]
     capabilities: Deep Insights
     console.openshift.io/plugins: '["gitops-plugin"]'
-    containerImage: quay.io/redhat-developer/gitops-operator
+    containerImage: quay.io/anjoseph/gitops-operator
     description: Enables teams to adopt GitOps principles for managing cluster configurations
       and application delivery across hybrid multi-cluster Kubernetes environments.
     operatorframework.io/cluster-monitoring: "true"
@@ -171,9 +171,9 @@ metadata:
     operators.openshift.io/infrastructure-features: '["disconnected"]'
     operators.operatorframework.io/builder: operator-sdk-v1.10.0+git
     operators.operatorframework.io/project_layout: go.kubebuilder.io/v3
-    repository: https://github.com/redhat-developer/gitops-operator
+    repository: https://github.com/anjoseph/gitops-operator
     support: Red Hat
-  name: gitops-operator.v1.8.0
+  name: gitops-operator.v1.12.0
   namespace: placeholder
 spec:
   apiservicedefinitions: {}
@@ -938,7 +938,7 @@ spec:
                 - name: LABEL_SELECTOR
                 - name: ENABLE_CONVERSION_WEBHOOK
                   value: "true"
-                image: quay.io/redhat-developer/gitops-operator:latest
+                image: quay.io/anjoseph/gitops-operator:1.12.0
                 livenessProbe:
                   httpGet:
                     path: /healthz
@@ -1060,8 +1060,8 @@ spec:
   maturity: alpha
   provider:
     name: Red Hat Inc
-  replaces: gitops-operator.v1.7.3
-  version: 1.8.0
+  replaces: gitops-operator.v1.11.1
+  version: 1.12.0
   webhookdefinitions:
   - admissionReviewVersions:
     - v1alpha1
