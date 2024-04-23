@@ -26,7 +26,7 @@ require (
 )
 
 require (
-	github.com/argoproj/argo-cd/v2 v2.10.1 // indirect
+	github.com/argoproj/argo-cd/v2 v2.10.5 // indirect
 	github.com/argoproj/argo-rollouts v1.6.6 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/blang/semver/v4 v4.0.0 // indirect
@@ -92,6 +92,7 @@ require (
 
 replace (
 	cloud.google.com/go => cloud.google.com/go v0.100.2
+	github.com/argoproj-labs/argocd-operator => github.com/anandf/argocd-operator v0.0.0-20240419101629-09379cf93d17
 	github.com/onsi/ginkgo => github.com/onsi/ginkgo v1.16.4
 	github.com/onsi/gomega => github.com/onsi/gomega v1.14.0
 	github.com/openshift/api => github.com/openshift/api v0.0.0-20220929131120-2bde012f248a

@@ -626,6 +626,8 @@ github.com/alecthomas/units v0.0.0-20190717042225-c3de453c63f4/go.mod h1:ybxpYRF
 github.com/alecthomas/units v0.0.0-20190924025748-f65c72e2690d/go.mod h1:rBZYJk541a8SKzHPHnH3zbiI+7dagKZ0cgpgrD7Fyho=
 github.com/alecthomas/units v0.0.0-20211218093645-b94a6e3cc137/go.mod h1:OMCwj8VM1Kc9e19TLln2VL61YJF0x1XFtfdL4JdbSyE=
 github.com/aliyun/aliyun-oss-go-sdk v2.0.4+incompatible/go.mod h1:T/Aws4fEfogEE9v+HPhhw+CntffsBHJ8nXQCwKr0/g8=
+github.com/anandf/argocd-operator v0.0.0-20240419101629-09379cf93d17 h1:qq+HZCo+jsrHnbdLXLUUUWzGK8Av377JlUx/FXSEMeY=
+github.com/anandf/argocd-operator v0.0.0-20240419101629-09379cf93d17/go.mod h1:zgUWRBTiJ8NTktr31Dvm60dh16MLIzkC/CAUTlTxj64=
 github.com/andreyvit/diff v0.0.0-20170406064948-c7f18ee00883/go.mod h1:rCTlJbsFo29Kk6CurOXKm700vrz8f0KW0JNfpkRJY/8=
 github.com/andybalholm/brotli v1.0.4/go.mod h1:fO7iG3H7G2nSZ7m0zPUDn85XEX2GTukHGRSepvi9Eig=
 github.com/antihax/optional v0.0.0-20180407024304-ca021399b1a6/go.mod h1:V8iCPQYkqmusNa815XgQio277wI47sdRh1dUOLdyC6Q=
@@ -639,10 +641,8 @@ github.com/apache/thrift v0.13.0/go.mod h1:cp2SuWMxlEZw2r+iP2GNCdIi4C1qmUzdZFSVb
 github.com/apache/thrift v0.16.0/go.mod h1:PHK3hniurgQaNMZYaCLEqXKsYK8upmhPbmdP2FXSqgU=
 github.com/argoproj-labs/argo-rollouts-manager v0.0.2 h1:f7V6PP1J9vkhYNsMbCWwB4hHqqgJvs+IbT2RFLsn9ho=
 github.com/argoproj-labs/argo-rollouts-manager v0.0.2/go.mod h1:r6/vgsXjS3ZdzfrP8QyDHtoFoKXLbVUIndkPeMzHJGc=
-github.com/argoproj-labs/argocd-operator v0.10.0 h1:B2k6Rwiff3O7fG3K7nNiFuo9TV7Kr0s/K9f4Mo+5Qak=
-github.com/argoproj-labs/argocd-operator v0.10.0/go.mod h1:4TThdvK88j46P6ybACEhHHqJstdnF+CFHkmlS068dqk=
-github.com/argoproj/argo-cd/v2 v2.10.1 h1:VD06GPeoq14Bo7IfiW+EKim3T1C9xaMElVrEtw+zll0=
-github.com/argoproj/argo-cd/v2 v2.10.1/go.mod h1:SK1uGZ9xWVzxuyg079MaO6+hz/Oz9wSDkGyT0gEkYSs=
+github.com/argoproj/argo-cd/v2 v2.10.5 h1:2YSZPjNY3KyE1kme2U54uAAicEn/4zyQ3aAkqkyW8UA=
+github.com/argoproj/argo-cd/v2 v2.10.5/go.mod h1:nujAuswdQvB6yWI8HubQjfUiLdiIlKlG0ihx2Ht1D28=
 github.com/argoproj/argo-rollouts v1.6.6 h1:JCJ0cGAwWkh2xCAHZ1OQmrobysRjCatmG9IZaLJpS1g=
 github.com/argoproj/argo-rollouts v1.6.6/go.mod h1:X2kTiBaYCSounmw1kmONdIZTwJNzNQYC0SrXUgSw9UI=
 github.com/armon/circbuf v0.0.0-20150827004946-bbbad097214e/go.mod h1:3U/XgcO3hCbHZ8TKRvWD2dDTCfh9M9ya+I9JpbB7O8o=
