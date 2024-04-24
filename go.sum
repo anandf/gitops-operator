@@ -626,8 +626,8 @@ github.com/alecthomas/units v0.0.0-20190717042225-c3de453c63f4/go.mod h1:ybxpYRF
 github.com/alecthomas/units v0.0.0-20190924025748-f65c72e2690d/go.mod h1:rBZYJk541a8SKzHPHnH3zbiI+7dagKZ0cgpgrD7Fyho=
 github.com/alecthomas/units v0.0.0-20211218093645-b94a6e3cc137/go.mod h1:OMCwj8VM1Kc9e19TLln2VL61YJF0x1XFtfdL4JdbSyE=
 github.com/aliyun/aliyun-oss-go-sdk v2.0.4+incompatible/go.mod h1:T/Aws4fEfogEE9v+HPhhw+CntffsBHJ8nXQCwKr0/g8=
-github.com/anandf/argocd-operator v0.0.0-20240419101629-09379cf93d17 h1:qq+HZCo+jsrHnbdLXLUUUWzGK8Av377JlUx/FXSEMeY=
-github.com/anandf/argocd-operator v0.0.0-20240419101629-09379cf93d17/go.mod h1:zgUWRBTiJ8NTktr31Dvm60dh16MLIzkC/CAUTlTxj64=
+github.com/anandf/argocd-operator v0.0.0-20240424135943-81646c206b56 h1:7e4P8J+g2LVEJeRLbitXDC3FKlR8ZGwZLwInmEwJ9fs=
+github.com/anandf/argocd-operator v0.0.0-20240424135943-81646c206b56/go.mod h1:zgUWRBTiJ8NTktr31Dvm60dh16MLIzkC/CAUTlTxj64=
 github.com/andreyvit/diff v0.0.0-20170406064948-c7f18ee00883/go.mod h1:rCTlJbsFo29Kk6CurOXKm700vrz8f0KW0JNfpkRJY/8=
 github.com/andybalholm/brotli v1.0.4/go.mod h1:fO7iG3H7G2nSZ7m0zPUDn85XEX2GTukHGRSepvi9Eig=
 github.com/antihax/optional v0.0.0-20180407024304-ca021399b1a6/go.mod h1:V8iCPQYkqmusNa815XgQio277wI47sdRh1dUOLdyC6Q=
