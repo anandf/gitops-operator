@@ -2,7 +2,7 @@ module github.com/redhat-developer/gitops-operator
 
 go 1.22.0
 
-toolchain go1.22.5
+toolchain go1.23.5
 
 require (
 	github.com/argoproj-labs/argo-rollouts-manager v0.0.5-0.20241107234728-9f79ece2e923
