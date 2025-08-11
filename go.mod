@@ -5,7 +5,7 @@ go 1.24.4
 require (
 	github.com/argoproj-labs/argo-rollouts-manager v0.0.6-0.20250625125608-ebd6207c8bb1
 	github.com/argoproj-labs/argocd-operator v0.15.0-rc1.0.20250806035040-d11fbb89eedb
-	github.com/argoproj/argo-cd/v3 v3.0.11
+	github.com/argoproj/argo-cd/v3 v3.0.12
 	github.com/argoproj/gitops-engine v0.7.1-0.20250520182409-89c110b5952e
 	github.com/go-logr/logr v1.4.2
 	github.com/google/go-cmp v0.7.0
@@ -180,6 +180,7 @@ require (
 )
 
 replace (
+	github.com/argoproj-labs/argocd-operator => github.com/anandf/argocd-operator v0.0.0-20250811092200-148df2628c60
 	k8s.io/api => k8s.io/api v0.32.2
 	k8s.io/apiextensions-apiserver => k8s.io/apiextensions-apiserver v0.32.2
 	k8s.io/apimachinery => k8s.io/apimachinery v0.32.2
