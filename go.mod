@@ -1,8 +1,6 @@
 module github.com/redhat-developer/gitops-operator
 
-go 1.22.0
-
-toolchain go1.22.5
+go 1.25
 
 require (
 	github.com/argoproj-labs/argo-rollouts-manager v0.0.5-0.20241107234728-9f79ece2e923
@@ -23,7 +21,7 @@ require (
 	k8s.io/apiextensions-apiserver v0.29.6
 	k8s.io/apimachinery v0.29.6
 	k8s.io/client-go v12.0.0+incompatible
-	k8s.io/utils v0.0.0-20240102154912-e7106e64919e
+	k8s.io/utils v0.0.0-20260707023825-cf1189d6abe3
 	sigs.k8s.io/controller-runtime v0.17.2
 	sigs.k8s.io/yaml v1.4.0
 )
